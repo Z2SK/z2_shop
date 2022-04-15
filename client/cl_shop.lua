@@ -1,6 +1,8 @@
 -- Create by Z2SK
 
-TriggerEvent('::{korioz#0110}::esx:getSharedObject', function(obj) ESX = obj end)
+--[[ If you have Korioz es_extended put this line: ]]-- TriggerEvent('::{korioz#0110}::esx:getSharedObject', function(obj) ESX = obj end)
+--[[ If you have es_extended from esx_framework put this line: ]]-- TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+
 
 Citizen.CreateThread(function()
     for k, v in pairs(Shops.Pos) do
